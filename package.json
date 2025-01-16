@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build -- --watch --sourcemap=inline",
+    "build": "rollup -i web/index.js -d src/ipyfoo/static -p terser -p 'css-only={output:\"index.css\"}' -p 'svelte={compilerOptions:{runes:true}}' -p 'node-resolve={browser:true}'"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.30.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-svelte": "^7.2.2"
+  },
+  "dependencies": {
+    "@anywidget/types": "^0.2.0",
+    "svelte": "^5.18.0"
+  }
+}
