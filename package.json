@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch --sourcemap=inline"
+  },
+  "dependencies": {
+    "@anywidget/types": "^0.2.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^4.30.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-svelte": "^7.2.2",
+    "svelte": "^5.18.0"
+  }
+}
