@@ -1,12 +1,14 @@
 # ipyfoo-svelte
 
-An experimental template for authoring [anywidget](http://anywidget.dev) with Svelte 5.
+An experimental template for authoring [anywidget](http://anywidget.dev) with
+Svelte 5.
 
 ## Development
 
-Development requires [uv](https://github.com/astral-sh/uv) and [`pnpm`](https://pnpm.io/).
+Development requires [uv](https://github.com/astral-sh/uv) and
+[`deno`](https://deno.land).
 
 ```sh
-pnpm dev # start a development server
-uv run jupyter lab example.ipynb
+deno task dev # start a development server
+uv run jupyter lab notebooks/example.ipynb
 ```

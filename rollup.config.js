@@ -1,6 +1,6 @@
-import css from "rollup-plugin-css-only"
-import svelte from "rollup-plugin-svelte";
-import resolve from "@rollup/plugin-node-resolve";
+import css from "npm:rollup-plugin-css-only@4.5.2";
+import svelte from "npm:rollup-plugin-svelte@7.2.2";
+import resolve from "npm:@rollup/plugin-node-resolve@16.0.0";
 
 export default {
 	input: "js/widget.js",
@@ -9,8 +9,8 @@ export default {
 		css({ output: "widget.css" }),
 		svelte({
 			extensions: [".svelte", ".svelte.js", "svelte.ts"],
-			compilerOptions: { runes: true }
+			compilerOptions: { runes: true },
 		}),
 		resolve({ browser: true }),
-	]
+	],
 };

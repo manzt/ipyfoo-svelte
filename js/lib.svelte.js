@@ -43,13 +43,13 @@ export function defineWidget(Widget, attributes) {
 		let state = undefined;
 		return {
 			initialize({ model }) {
-				state = createState(model, attributes)
+				state = createState(model, attributes);
 			},
 			/** @type {import("@anywidget/types").Render<T>} */
 			render({ model, el }) {
 				let app = mount(Widget, { target: el, props: { model, state } });
 				return () => unmount(app);
-			}
-		}
-	}
+			},
+		};
+	};
 }

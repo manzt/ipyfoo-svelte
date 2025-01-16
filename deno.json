@@ -1,0 +1,17 @@
+{
+	"lock": false,
+	"nodeModulesDir": "auto",
+	"tasks": {
+		"dev": "deno -A npm:rollup@4 -c --watch --sourcemap=inline",
+		"build": "deno -A npm:rollup@4 -c"
+	},
+	"compilerOptions": {
+		"checkJs": true
+	},
+	"fmt": {
+		"useTabs": true
+	},
+	"imports": {
+		"svelte": "npm:svelte@^5.18.0"
+	}
+}
