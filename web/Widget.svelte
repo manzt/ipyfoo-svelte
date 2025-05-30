@@ -1,14 +1,9 @@
 <script>
-  /**
-   * @typedef State
-   * @prop {number} value
-   */
-
-  /** @type {{ state: State }}*/
-  let { state } = $props();
+  /** @type {{ bindings: { value: number }}*/
+  let { bindings } = $props();
 </script>
 
-<button onclick={() => state.value++}>Count is {state.value}</button>
+<button onclick={() => bindings.value++}>Count is {bindings.value}</button>
 
 <style>
   button {
