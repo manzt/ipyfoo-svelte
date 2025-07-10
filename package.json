@@ -4,12 +4,12 @@
     "dev": "rolldown --watch --sourcemap=inline -c",
     "build": "rolldown -c"
   },
-  "devDependencies": {
-    "rolldown": "1.0.0-beta.1",
-    "rollup-plugin-svelte": "^7.2.2"
-  },
   "dependencies": {
     "@anywidget/types": "^0.2.0",
-    "svelte": "^5.18.0"
+    "svelte": "^5.33.10"
+  },
+  "devDependencies": {
+    "rolldown": "1.0.0-beta.10",
+    "rollup-plugin-svelte": "^7.2.2"
   }
 }

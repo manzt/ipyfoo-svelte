@@ -37,14 +37,14 @@ function createState(model) {
 export function defineWidget(Widget) {
   return () => {
     /* @type {T | undefined} */
-    let state = undefined;
+    let bindings = undefined;
     return {
       initialize({ model }) {
-        state = createState(model);
+        bindings = createState(model);
       },
       /** @type {import("@anywidget/types").Render<T>} */
       render({ model, el }) {
-        let app = mount(Widget, { target: el, props: { model, state } });
+        let app = mount(Widget, { target: el, props: { model, bindings } });
         return () => unmount(app);
       },
     };
