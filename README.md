@@ -1,7 +1,6 @@
 # ipyfoo-svelte
 
-An experimental template for authoring [anywidget](http://anywidget.dev) with
-Svelte 5.
+An template for authoring [anywidget](http://anywidget.dev) with Svelte 5.
 
 ## Development
 

@@ -5,6 +5,7 @@
     "build": "rolldown -c"
   },
   "dependencies": {
+    "@anywidget/svelte": "^0.1.0",
     "@anywidget/types": "^0.2.0",
     "svelte": "^5.33.10"
   },
